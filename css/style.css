@@ -3,8 +3,8 @@
 :root {
     --dark: #000000;
     --light: #e2eaf6;
-    --primary: #273968;
-    --secondary: #355a8d;
+    --primary: #18b640;
+    --secondary: #18b640;
 }
 
 .fw-medium {
@@ -226,8 +226,8 @@
 /*** Accordion ***/
 
 .accordion-button:not(.collapsed) {
-    color: #355a8d;
-    background-color: #ffecec;
+    color: #19c357;
+    background-color: #f7ffec;
     box-shadow: inset 0 -1px 0 #355a8d;
 }
 
@@ -706,6 +706,43 @@ body { padding-top: 0 !important; }
   .map-embed iframe{ aspect-ratio: 16 / 9; }
 }
 
+/* === FOOTER CUSTOM THEME OVERRIDE === */
+.footer {
+  background: #0b3d2e; /* dark green */
+  color: #d4af37 !important; /* gold */
+}
 
+.footer h4,
+.footer p,
+.footer span,
+.footer a,
+.footer i {
+  color: #d4af37 !important; /* gold for all footer text and icons */
+}
+
+/* Link hover effect - subtle brighter gold */
+.footer a:hover {
+  color: #f6d86b !important; 
+  text-decoration: none;
+}
+
+/* Footer border in slightly lighter green to blend smoothly */
+.footer .copyright {
+  border-top: 1px solid rgba(212, 175, 55, 0.4);
+}
+
+/* Optional: remove gradient text effect if .ft used */
+.ft h4,
+.ft p,
+.ft span,
+.ft i,
+.ft a {
+  background: none !important;
+  -webkit-text-fill-color: #d4af37 !important;
+}
+.footer {
+  background: linear-gradient(180deg, #145c33 0%, #0d3e25 100%);
+  color: #d4af37 !important;
+}
 
 
